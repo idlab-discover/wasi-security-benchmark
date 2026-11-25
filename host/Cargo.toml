@@ -1,0 +1,22 @@
+[package]
+name = "wasi-security-bench"
+version = "0.1.0"
+edition = "2024"
+description = "Benchmark suite for elastic-wasi-security policy enforcement"
+
+[dependencies]
+elastic-wasi-security = { git = "https://github.com/elasticproject-eu/wasi-security", rev = "ee83c55a2186cbaea0f1a86bf0cce7298cd42b05" }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+socket2 = "0.6"
+tokio = { version = "1.53", features = ["full"] }
+wasmtime = { version = "50.0.0", features = ["component-model", "async"] }
+wasmtime-wasi = "50.0.0"
+
+[dev-dependencies]
+criterion = { version = "0.5", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "policy"
+harness = false

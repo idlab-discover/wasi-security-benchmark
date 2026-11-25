@@ -1,0 +1,14 @@
+version = "0.0.1"
+arguments = ["--bench"]
+
+[env]
+LOG_LEVEL = "debug"
+
+[storage]
+readonly = ["/tmp/wasi-sec-bench-186866/ro::/ro"]
+mount = ["/tmp/wasi-sec-bench-186866/rw::/rw"]
+
+[network]
+allow_ip_name_lookup = true
+bind = ["tcp://127.0.0.1:0"]
+connect = ["tcp://127.0.0.1:37243", "udp://127.0.0.1:58221"]

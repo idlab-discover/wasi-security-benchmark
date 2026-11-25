@@ -1,0 +1,57 @@
+clock                       no policy                                       103.6 ns/op      9653760 req/s  ok   errors={}
+clock                       policy                                          102.3 ns/op      9772766 req/s  ok   errors={}
+env                         no policy                                       874.9 ns/op      1143043 req/s  ok   errors={}
+env                         policy                                         1027.8 ns/op       972951 req/s  ok   errors={}
+fs_stat                     no policy                                      5151.5 ns/op       194117 req/s  ok   errors={}
+fs_stat                     policy (readonly dir)                          5307.9 ns/op       188397 req/s  ok   errors={}
+fs_read                     no policy                                     12966.9 ns/op        77119 req/s  ok   errors={}
+fs_read                     policy (readonly dir)                         12275.3 ns/op        81464 req/s  ok   errors={}
+fs_write                    no policy                                     12794.0 ns/op        78162 req/s  ok   errors={}
+fs_write                    policy (mount dir)                            13156.0 ns/op        76011 req/s  ok   errors={}
+fs_open_write               no policy                                      7144.1 ns/op       139976 req/s  ok   errors={}
+fs_open_write               policy: mount dir                              7087.9 ns/op       141085 req/s  ok   errors={}
+fs_open_write               policy: readonly dir → denied                   307.2 ns/op      3255651 req/s  ok   errors={"not-permitted":20000}
+fs_open_write               policy: ../ escape → denied (sandbox)          5999.6 ns/op       166678 req/s  ok   errors={"not-permitted":20000}
+tcp_create                  no policy                                      2826.8 ns/op       353759 req/s  ok   errors={}
+tcp_create                  policy                                         2827.8 ns/op       353634 req/s  ok   errors={}
+tcp_create                  policy w/o tcp rules → denied                   293.0 ns/op      3413096 req/s  ok   errors={"access-denied":20000}
+tcp_bind                    no policy                                      4576.0 ns/op       218533 req/s  ok   errors={}
+tcp_bind                    policy: allowed addr                           4516.6 ns/op       221404 req/s  ok   errors={}
+tcp_bind                    policy: denied addr                            3719.0 ns/op       268892 req/s  ok   errors={"access-denied":10000}
+tcp_connect                 no policy                                     37268.6 ns/op        26832 req/s  ok   errors={}
+tcp_connect                 policy: allowed peer                          36626.1 ns/op        27303 req/s  ok   errors={}
+tcp_connect                 policy: denied peer                            4575.9 ns/op       218536 req/s  ok   errors={"access-denied":2000}
+tcp_connect                 policy w/o tcp rules → denied                   293.0 ns/op      3412562 req/s  ok   errors={"access-denied":2000}
+udp_send                    no policy                                      3855.0 ns/op       259403 req/s  ok   errors={}
+udp_send                    policy: allowed peer                           3963.9 ns/op       252277 req/s  ok   errors={}
+udp_send                    policy: denied peer                             760.4 ns/op      1315087 req/s  ok   errors={"access-denied":50000}
+dns                         no policy                                     36345.9 ns/op        27513 req/s  ok   errors={}
+dns                         policy: lookup allowed                        36936.4 ns/op        27074 req/s  ok   errors={}
+dns                         policy: lookup off → denied                     325.8 ns/op      3069388 req/s  ok   errors={"permanent-resolver-failure":5000}
+scale_udp_send              no policy                                      3663.9 ns/op       272934 req/s  ok   errors={}
+scale_udp_send     r=0      allowed (matching rule last)                   3996.0 ns/op       250248 req/s  ok   errors={}
+scale_udp_send     r=0      denied (scans all rules)                        751.5 ns/op      1330731 req/s  ok   errors={"access-denied":20000}
+scale_udp_send     r=10     allowed (matching rule last)                   4082.4 ns/op       244952 req/s  ok   errors={}
+scale_udp_send     r=10     denied (scans all rules)                        761.8 ns/op      1312672 req/s  ok   errors={"access-denied":20000}
+scale_udp_send     r=100    allowed (matching rule last)                   3893.4 ns/op       256848 req/s  ok   errors={}
+scale_udp_send     r=100    denied (scans all rules)                        849.0 ns/op      1177852 req/s  ok   errors={"access-denied":20000}
+scale_udp_send     r=1000   allowed (matching rule last)                   4786.9 ns/op       208904 req/s  ok   errors={}
+scale_udp_send     r=1000   denied (scans all rules)                       1574.5 ns/op       635119 req/s  ok   errors={"access-denied":20000}
+scale_udp_send     r=10000  allowed (matching rule last)                  12557.0 ns/op        79637 req/s  ok   errors={}
+scale_udp_send     r=10000  denied (scans all rules)                       9361.5 ns/op       106820 req/s  ok   errors={"access-denied":20000}
+scale_tcp_connect           no policy                                     36393.6 ns/op        27477 req/s  ok   errors={}
+scale_tcp_connect  r=0      allowed (matching rule last)                  36486.4 ns/op        27407 req/s  ok   errors={}
+scale_tcp_connect  r=0      denied (scans all rules)                       4540.8 ns/op       220223 req/s  ok   errors={"access-denied":2000}
+scale_tcp_connect  r=10     allowed (matching rule last)                  36265.3 ns/op        27575 req/s  ok   errors={}
+scale_tcp_connect  r=10     denied (scans all rules)                       4600.3 ns/op       217379 req/s  ok   errors={"access-denied":2000}
+scale_tcp_connect  r=100    allowed (matching rule last)                  37507.3 ns/op        26661 req/s  ok   errors={}
+scale_tcp_connect  r=100    denied (scans all rules)                       4781.5 ns/op       209141 req/s  ok   errors={"access-denied":2000}
+scale_tcp_connect  r=1000   allowed (matching rule last)                  38807.3 ns/op        25768 req/s  ok   errors={}
+scale_tcp_connect  r=1000   denied (scans all rules)                       6784.5 ns/op       147396 req/s  ok   errors={"access-denied":2000}
+scale_tcp_connect  r=10000  allowed (matching rule last)                  59896.9 ns/op        16695 req/s  ok   errors={}
+scale_tcp_connect  r=10000  denied (scans all rules)                      26576.5 ns/op        37627 req/s  ok   errors={"access-denied":2000}
+lifecycle baseline     parse         0 ns  build      4104 ns  instantiate     36675 ns  run     20877 ns
+lifecycle policy       parse      8640 ns  build      4579 ns  instantiate     36369 ns  run     21223 ns
+lifecycle policy+100   parse     45160 ns  build      4975 ns  instantiate     36838 ns  run     21862 ns
+lifecycle policy+1000  parse    367164 ns  build     11036 ns  instantiate     43526 ns  run     24092 ns
+wrote results/e2e.json

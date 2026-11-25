@@ -1,0 +1,599 @@
+   Compiling wasi-security-bench v0.1.0 (/home/mvkenhov/Documents/git/elastic/wasi-security-bench/bench/host)
+    Finished `bench` profile [optimized] target(s) in 1.44s
+     Running benches/policy.rs (target/release/build/wasi-security-bench/af9d0a06915a8660/out/policy-af9d0a06915a8660)
+Benchmarking parse_policy/examples/policy.toml
+Benchmarking parse_policy/examples/policy.toml: Warming up for 500.00 ms
+Benchmarking parse_policy/examples/policy.toml: Collecting 50 samples in estimated 2.0037 s (455k iterations)
+Benchmarking parse_policy/examples/policy.toml: Analyzing
+parse_policy/examples/policy.toml
+                        time:   [4.3311 µs 4.3361 µs 4.3436 µs]
+                        change: [-3.7959% -2.5399% -0.5763%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 9 outliers among 50 measurements (18.00%)
+  3 (6.00%) low severe
+  1 (2.00%) low mild
+  2 (4.00%) high mild
+  3 (6.00%) high severe
+Benchmarking parse_policy/rules/3
+Benchmarking parse_policy/rules/3: Warming up for 500.00 ms
+Benchmarking parse_policy/rules/3: Collecting 50 samples in estimated 2.0012 s (564k iterations)
+Benchmarking parse_policy/rules/3: Analyzing
+parse_policy/rules/3    time:   [3.4164 µs 3.4545 µs 3.5300 µs]
+                        thrpt:  [849.85 Kelem/s 868.43 Kelem/s 878.12 Kelem/s]
+                 change:
+                        time:   [-1.7905% +0.3249% +2.8179%] (p = 0.82 > 0.05)
+                        thrpt:  [-2.7407% -0.3238% +1.8231%]
+                        No change in performance detected.
+Found 4 outliers among 50 measurements (8.00%)
+  1 (2.00%) low mild
+  1 (2.00%) high mild
+  2 (4.00%) high severe
+Benchmarking parse_policy/rules/23
+Benchmarking parse_policy/rules/23: Warming up for 500.00 ms
+Benchmarking parse_policy/rules/23: Collecting 50 samples in estimated 2.0089 s (286k iterations)
+Benchmarking parse_policy/rules/23: Analyzing
+parse_policy/rules/23   time:   [6.9788 µs 6.9872 µs 6.9973 µs]
+                        thrpt:  [3.2870 Melem/s 3.2917 Melem/s 3.2957 Melem/s]
+                 change:
+                        time:   [-0.5407% -0.1384% +0.2868%] (p = 0.54 > 0.05)
+                        thrpt:  [-0.2860% +0.1386% +0.5436%]
+                        No change in performance detected.
+Found 5 outliers among 50 measurements (10.00%)
+  1 (2.00%) high mild
+  4 (8.00%) high severe
+Benchmarking parse_policy/rules/203
+Benchmarking parse_policy/rules/203: Warming up for 500.00 ms
+Benchmarking parse_policy/rules/203: Collecting 50 samples in estimated 2.0418 s (52k iterations)
+Benchmarking parse_policy/rules/203: Analyzing
+parse_policy/rules/203  time:   [37.137 µs 37.320 µs 37.616 µs]
+                        thrpt:  [5.3966 Melem/s 5.4394 Melem/s 5.4663 Melem/s]
+                 change:
+                        time:   [-0.5612% +0.5687% +2.0310%] (p = 0.50 > 0.05)
+                        thrpt:  [-1.9906% -0.5655% +0.5644%]
+                        No change in performance detected.
+Found 5 outliers among 50 measurements (10.00%)
+  4 (8.00%) high mild
+  1 (2.00%) high severe
+Benchmarking parse_policy/rules/2003
+Benchmarking parse_policy/rules/2003: Warming up for 500.00 ms
+Benchmarking parse_policy/rules/2003: Collecting 50 samples in estimated 2.1152 s (6375 iterations)
+Benchmarking parse_policy/rules/2003: Analyzing
+parse_policy/rules/2003 time:   [319.74 µs 320.66 µs 321.83 µs]
+                        thrpt:  [6.2238 Melem/s 6.2465 Melem/s 6.2645 Melem/s]
+                 change:
+                        time:   [-0.4975% +0.2404% +1.1630%] (p = 0.68 > 0.05)
+                        thrpt:  [-1.1496% -0.2398% +0.5000%]
+                        No change in performance detected.
+Found 5 outliers among 50 measurements (10.00%)
+  2 (4.00%) high mild
+  3 (6.00%) high severe
+Benchmarking parse_policy/rules/20003
+Benchmarking parse_policy/rules/20003: Warming up for 500.00 ms
+Benchmarking parse_policy/rules/20003: Collecting 50 samples in estimated 2.0206 s (600 iterations)
+Benchmarking parse_policy/rules/20003: Analyzing
+parse_policy/rules/20003
+                        time:   [3.2600 ms 3.2656 ms 3.2716 ms]
+                        thrpt:  [6.1140 Melem/s 6.1254 Melem/s 6.1360 Melem/s]
+                 change:
+                        time:   [-1.9239% -0.8902% -0.0970%] (p = 0.05 > 0.05)
+                        thrpt:  [+0.0971% +0.8982% +1.9617%]
+                        No change in performance detected.
+Found 2 outliers among 50 measurements (4.00%)
+  2 (4.00%) high mild
+
+Benchmarking allows_socket/udp_send/allow_first_rule/0
+Benchmarking allows_socket/udp_send/allow_first_rule/0: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_first_rule/0: Collecting 50 samples in estimated 2.0000 s (345M iterations)
+Benchmarking allows_socket/udp_send/allow_first_rule/0: Analyzing
+allows_socket/udp_send/allow_first_rule/0
+                        time:   [5.6789 ns 5.6826 ns 5.6871 ns]
+                        change: [-1.5446% -1.1115% -0.4821%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 8 outliers among 50 measurements (16.00%)
+  1 (2.00%) low severe
+  2 (4.00%) low mild
+  2 (4.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/udp_send/allow_last_rule/0
+Benchmarking allows_socket/udp_send/allow_last_rule/0: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_last_rule/0: Collecting 50 samples in estimated 2.0000 s (334M iterations)
+Benchmarking allows_socket/udp_send/allow_last_rule/0: Analyzing
+allows_socket/udp_send/allow_last_rule/0
+                        time:   [5.9617 ns 5.9656 ns 5.9694 ns]
+                        change: [-2.7053% -2.3181% -1.6454%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 5 outliers among 50 measurements (10.00%)
+  1 (2.00%) low mild
+  2 (4.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/udp_send/deny/0
+Benchmarking allows_socket/udp_send/deny/0: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/deny/0: Collecting 50 samples in estimated 2.0000 s (337M iterations)
+Benchmarking allows_socket/udp_send/deny/0: Analyzing
+allows_socket/udp_send/deny/0
+                        time:   [5.7940 ns 5.7989 ns 5.8053 ns]
+                        change: [-2.9940% -2.6645% -2.2773%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 9 outliers among 50 measurements (18.00%)
+  3 (6.00%) high mild
+  6 (12.00%) high severe
+Benchmarking allows_socket/tcp_connect/allow_last_rule/0
+Benchmarking allows_socket/tcp_connect/allow_last_rule/0: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/allow_last_rule/0: Collecting 50 samples in estimated 2.0000 s (355M iterations)
+Benchmarking allows_socket/tcp_connect/allow_last_rule/0: Analyzing
+allows_socket/tcp_connect/allow_last_rule/0
+                        time:   [5.6024 ns 5.6090 ns 5.6175 ns]
+                        change: [-2.3221% -1.9789% -1.6239%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 50 measurements (12.00%)
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/tcp_connect/deny/0
+Benchmarking allows_socket/tcp_connect/deny/0: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/deny/0: Collecting 50 samples in estimated 2.0000 s (337M iterations)
+Benchmarking allows_socket/tcp_connect/deny/0: Analyzing
+allows_socket/tcp_connect/deny/0
+                        time:   [5.7742 ns 5.8073 ns 5.8587 ns]
+                        change: [-1.4957% -1.0555% -0.5315%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 7 outliers among 50 measurements (14.00%)
+  4 (8.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/tcp_bind/implicit_probe/0
+Benchmarking allows_socket/tcp_bind/implicit_probe/0: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_bind/implicit_probe/0: Collecting 50 samples in estimated 2.0000 s (322M iterations)
+Benchmarking allows_socket/tcp_bind/implicit_probe/0: Analyzing
+allows_socket/tcp_bind/implicit_probe/0
+                        time:   [6.1855 ns 6.1950 ns 6.2060 ns]
+                        change: [-0.9169% -0.7099% -0.5109%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 6 outliers among 50 measurements (12.00%)
+  3 (6.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/tcp_accept/unpoliced/0
+Benchmarking allows_socket/tcp_accept/unpoliced/0: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_accept/unpoliced/0: Collecting 50 samples in estimated 2.0000 s (1.2B iterations)
+Benchmarking allows_socket/tcp_accept/unpoliced/0: Analyzing
+allows_socket/tcp_accept/unpoliced/0
+                        time:   [1.5882 ns 1.5901 ns 1.5928 ns]
+                        change: [+14.203% +14.458% +14.749%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 7 outliers among 50 measurements (14.00%)
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/udp_send/allow_first_rule/10
+Benchmarking allows_socket/udp_send/allow_first_rule/10: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_first_rule/10: Collecting 50 samples in estimated 2.0000 s (355M iterations)
+Benchmarking allows_socket/udp_send/allow_first_rule/10: Analyzing
+allows_socket/udp_send/allow_first_rule/10
+                        time:   [5.6228 ns 5.6288 ns 5.6352 ns]
+                        change: [-1.2891% -1.0754% -0.8416%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 5 outliers among 50 measurements (10.00%)
+  2 (4.00%) low mild
+  3 (6.00%) high mild
+Benchmarking allows_socket/udp_send/allow_last_rule/10
+Benchmarking allows_socket/udp_send/allow_last_rule/10: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_last_rule/10: Collecting 50 samples in estimated 2.0000 s (155M iterations)
+Benchmarking allows_socket/udp_send/allow_last_rule/10: Analyzing
+allows_socket/udp_send/allow_last_rule/10
+                        time:   [12.280 ns 12.558 ns 12.991 ns]
+                        change: [-19.810% -14.970% -4.5176%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 50 measurements (12.00%)
+  3 (6.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/udp_send/deny/10
+Benchmarking allows_socket/udp_send/deny/10: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/deny/10: Collecting 50 samples in estimated 2.0000 s (126M iterations)
+Benchmarking allows_socket/udp_send/deny/10: Analyzing
+allows_socket/udp_send/deny/10
+                        time:   [15.343 ns 15.359 ns 15.379 ns]
+                        change: [-1.0353% -0.1886% +1.0522%] (p = 0.80 > 0.05)
+                        No change in performance detected.
+Found 6 outliers among 50 measurements (12.00%)
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10: Collecting 50 samples in estimated 2.0000 s (143M iterations)
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10: Analyzing
+allows_socket/tcp_connect/allow_last_rule/10
+                        time:   [13.864 ns 14.137 ns 14.747 ns]
+                        change: [-1.7655% -0.3719% +1.9812%] (p = 0.81 > 0.05)
+                        No change in performance detected.
+Found 2 outliers among 50 measurements (4.00%)
+  1 (2.00%) high mild
+  1 (2.00%) high severe
+Benchmarking allows_socket/tcp_connect/deny/10
+Benchmarking allows_socket/tcp_connect/deny/10: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/deny/10: Collecting 50 samples in estimated 2.0000 s (132M iterations)
+Benchmarking allows_socket/tcp_connect/deny/10: Analyzing
+allows_socket/tcp_connect/deny/10
+                        time:   [14.918 ns 15.113 ns 15.456 ns]
+                        change: [-3.9693% -2.3830% -0.7032%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 10 outliers among 50 measurements (20.00%)
+  1 (2.00%) low severe
+  2 (4.00%) low mild
+  3 (6.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_bind/implicit_probe/10
+Benchmarking allows_socket/tcp_bind/implicit_probe/10: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_bind/implicit_probe/10: Collecting 50 samples in estimated 2.0000 s (123M iterations)
+Benchmarking allows_socket/tcp_bind/implicit_probe/10: Analyzing
+allows_socket/tcp_bind/implicit_probe/10
+                        time:   [16.803 ns 16.841 ns 16.888 ns]
+                        change: [+0.7001% +1.1780% +1.5724%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 5 outliers among 50 measurements (10.00%)
+  4 (8.00%) high mild
+  1 (2.00%) high severe
+Benchmarking allows_socket/tcp_accept/unpoliced/10
+Benchmarking allows_socket/tcp_accept/unpoliced/10: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_accept/unpoliced/10: Collecting 50 samples in estimated 2.0000 s (1.3B iterations)
+Benchmarking allows_socket/tcp_accept/unpoliced/10: Analyzing
+allows_socket/tcp_accept/unpoliced/10
+                        time:   [1.5697 ns 1.5718 ns 1.5743 ns]
+                        change: [+13.586% +14.080% +14.655%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 7 outliers among 50 measurements (14.00%)
+  1 (2.00%) high mild
+  6 (12.00%) high severe
+Benchmarking allows_socket/udp_send/allow_first_rule/100
+Benchmarking allows_socket/udp_send/allow_first_rule/100: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_first_rule/100: Collecting 50 samples in estimated 2.0000 s (359M iterations)
+Benchmarking allows_socket/udp_send/allow_first_rule/100: Analyzing
+allows_socket/udp_send/allow_first_rule/100
+                        time:   [5.5698 ns 5.6020 ns 5.6504 ns]
+                        change: [-2.9523% -2.5301% -1.9335%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 5 outliers among 50 measurements (10.00%)
+  1 (2.00%) low severe
+  2 (4.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/udp_send/allow_last_rule/100
+Benchmarking allows_socket/udp_send/allow_last_rule/100: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_last_rule/100: Collecting 50 samples in estimated 2.0001 s (17M iterations)
+Benchmarking allows_socket/udp_send/allow_last_rule/100: Analyzing
+allows_socket/udp_send/allow_last_rule/100
+                        time:   [97.327 ns 114.33 ns 135.74 ns]
+                        change: [+17.628% +36.312% +56.827%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 9 outliers among 50 measurements (18.00%)
+  4 (8.00%) high mild
+  5 (10.00%) high severe
+Benchmarking allows_socket/udp_send/deny/100
+Benchmarking allows_socket/udp_send/deny/100: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/deny/100: Collecting 50 samples in estimated 2.0001 s (25M iterations)
+Benchmarking allows_socket/udp_send/deny/100: Analyzing
+allows_socket/udp_send/deny/100
+                        time:   [78.114 ns 79.210 ns 80.821 ns]
+                        change: [-10.360% -3.8994% +0.8032%] (p = 0.25 > 0.05)
+                        No change in performance detected.
+Found 8 outliers among 50 measurements (16.00%)
+  4 (8.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_connect/allow_last_rule/100
+Benchmarking allows_socket/tcp_connect/allow_last_rule/100: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/allow_last_rule/100: Collecting 50 samples in estimated 2.0001 s (21M iterations)
+Benchmarking allows_socket/tcp_connect/allow_last_rule/100: Analyzing
+allows_socket/tcp_connect/allow_last_rule/100
+                        time:   [88.175 ns 93.318 ns 102.83 ns]
+                        change: [-9.1727% +0.2183% +10.753%] (p = 0.96 > 0.05)
+                        No change in performance detected.
+Found 8 outliers among 50 measurements (16.00%)
+  2 (4.00%) high mild
+  6 (12.00%) high severe
+Benchmarking allows_socket/tcp_connect/deny/100
+Benchmarking allows_socket/tcp_connect/deny/100: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/deny/100: Collecting 50 samples in estimated 2.0001 s (22M iterations)
+Benchmarking allows_socket/tcp_connect/deny/100: Analyzing
+allows_socket/tcp_connect/deny/100
+                        time:   [85.391 ns 89.772 ns 95.897 ns]
+                        change: [-2.2170% +1.4709% +5.5860%] (p = 0.49 > 0.05)
+                        No change in performance detected.
+Found 8 outliers among 50 measurements (16.00%)
+  4 (8.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_bind/implicit_probe/100
+Benchmarking allows_socket/tcp_bind/implicit_probe/100: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_bind/implicit_probe/100: Collecting 50 samples in estimated 2.0001 s (20M iterations)
+Benchmarking allows_socket/tcp_bind/implicit_probe/100: Analyzing
+allows_socket/tcp_bind/implicit_probe/100
+                        time:   [98.631 ns 98.739 ns 98.868 ns]
+                        change: [+0.1479% +0.4366% +0.7574%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 3 outliers among 50 measurements (6.00%)
+  1 (2.00%) low mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/tcp_accept/unpoliced/100
+Benchmarking allows_socket/tcp_accept/unpoliced/100: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_accept/unpoliced/100: Collecting 50 samples in estimated 2.0000 s (1.3B iterations)
+Benchmarking allows_socket/tcp_accept/unpoliced/100: Analyzing
+allows_socket/tcp_accept/unpoliced/100
+                        time:   [1.5611 ns 1.5638 ns 1.5674 ns]
+                        change: [+13.342% +13.579% +13.846%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 8 outliers among 50 measurements (16.00%)
+  6 (12.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/udp_send/allow_first_rule/1000
+Benchmarking allows_socket/udp_send/allow_first_rule/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_first_rule/1000: Collecting 50 samples in estimated 2.0000 s (359M iterations)
+Benchmarking allows_socket/udp_send/allow_first_rule/1000: Analyzing
+allows_socket/udp_send/allow_first_rule/1000
+                        time:   [5.5379 ns 5.5436 ns 5.5524 ns]
+                        change: [-2.9243% -2.6245% -2.2865%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 9 outliers among 50 measurements (18.00%)
+  2 (4.00%) low severe
+  2 (4.00%) low mild
+  1 (2.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/udp_send/allow_last_rule/1000
+Benchmarking allows_socket/udp_send/allow_last_rule/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_last_rule/1000: Collecting 50 samples in estimated 2.0007 s (2.2M iterations)
+Benchmarking allows_socket/udp_send/allow_last_rule/1000: Analyzing
+allows_socket/udp_send/allow_last_rule/1000
+                        time:   [730.02 ns 822.20 ns 952.86 ns]
+                        change: [+7.9685% +27.166% +52.697%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 10 outliers among 50 measurements (20.00%)
+  1 (2.00%) low mild
+  1 (2.00%) high mild
+  8 (16.00%) high severe
+Benchmarking allows_socket/udp_send/deny/1000
+Benchmarking allows_socket/udp_send/deny/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/deny/1000: Collecting 50 samples in estimated 2.0004 s (3.1M iterations)
+Benchmarking allows_socket/udp_send/deny/1000: Analyzing
+allows_socket/udp_send/deny/1000
+                        time:   [652.48 ns 656.59 ns 665.76 ns]
+                        change: [-0.2445% +1.2555% +3.5769%] (p = 0.26 > 0.05)
+                        No change in performance detected.
+Found 9 outliers among 50 measurements (18.00%)
+  2 (4.00%) low mild
+  2 (4.00%) high mild
+  5 (10.00%) high severe
+Benchmarking allows_socket/tcp_connect/allow_last_rule/1000
+Benchmarking allows_socket/tcp_connect/allow_last_rule/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/allow_last_rule/1000: Collecting 50 samples in estimated 2.0005 s (2.9M iterations)
+Benchmarking allows_socket/tcp_connect/allow_last_rule/1000: Analyzing
+allows_socket/tcp_connect/allow_last_rule/1000
+                        time:   [670.15 ns 766.76 ns 886.33 ns]
+                        change: [-5.1063% -0.2132% +6.7618%] (p = 0.95 > 0.05)
+                        No change in performance detected.
+Found 6 outliers among 50 measurements (12.00%)
+  2 (4.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_connect/deny/1000
+Benchmarking allows_socket/tcp_connect/deny/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/deny/1000: Collecting 50 samples in estimated 2.0003 s (2.8M iterations)
+Benchmarking allows_socket/tcp_connect/deny/1000: Analyzing
+allows_socket/tcp_connect/deny/1000
+                        time:   [717.19 ns 875.34 ns 1.0980 µs]
+                        change: [-0.5469% +10.731% +25.486%] (p = 0.14 > 0.05)
+                        No change in performance detected.
+Found 9 outliers among 50 measurements (18.00%)
+  3 (6.00%) high mild
+  6 (12.00%) high severe
+Benchmarking allows_socket/tcp_bind/implicit_probe/1000
+Benchmarking allows_socket/tcp_bind/implicit_probe/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_bind/implicit_probe/1000: Collecting 50 samples in estimated 2.0004 s (2.2M iterations)
+Benchmarking allows_socket/tcp_bind/implicit_probe/1000: Analyzing
+allows_socket/tcp_bind/implicit_probe/1000
+                        time:   [909.27 ns 910.52 ns 912.10 ns]
+                        change: [-2.7046% -2.0115% -1.3009%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 4 outliers among 50 measurements (8.00%)
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_accept/unpoliced/1000
+Benchmarking allows_socket/tcp_accept/unpoliced/1000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_accept/unpoliced/1000: Collecting 50 samples in estimated 2.0000 s (1.3B iterations)
+Benchmarking allows_socket/tcp_accept/unpoliced/1000: Analyzing
+allows_socket/tcp_accept/unpoliced/1000
+                        time:   [1.5602 ns 1.5617 ns 1.5636 ns]
+                        change: [+9.3100% +11.328% +12.601%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 6 outliers among 50 measurements (12.00%)
+  3 (6.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/udp_send/allow_first_rule/10000
+Benchmarking allows_socket/udp_send/allow_first_rule/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_first_rule/10000: Collecting 50 samples in estimated 2.0000 s (363M iterations)
+Benchmarking allows_socket/udp_send/allow_first_rule/10000: Analyzing
+allows_socket/udp_send/allow_first_rule/10000
+                        time:   [5.5390 ns 5.5457 ns 5.5547 ns]
+                        change: [-3.0433% -2.8003% -2.5510%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 8 outliers among 50 measurements (16.00%)
+  2 (4.00%) low severe
+  2 (4.00%) low mild
+  1 (2.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/udp_send/allow_last_rule/10000
+Benchmarking allows_socket/udp_send/allow_last_rule/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/allow_last_rule/10000: Collecting 50 samples in estimated 2.0051 s (247k iterations)
+Benchmarking allows_socket/udp_send/allow_last_rule/10000: Analyzing
+allows_socket/udp_send/allow_last_rule/10000
+                        time:   [8.1161 µs 8.1601 µs 8.2232 µs]
+                        change: [-2.4831% -1.9752% -1.4431%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 9 outliers among 50 measurements (18.00%)
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  5 (10.00%) high severe
+Benchmarking allows_socket/udp_send/deny/10000
+Benchmarking allows_socket/udp_send/deny/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/udp_send/deny/10000: Collecting 50 samples in estimated 2.0050 s (245k iterations)
+Benchmarking allows_socket/udp_send/deny/10000: Analyzing
+allows_socket/udp_send/deny/10000
+                        time:   [8.0954 µs 8.1765 µs 8.3409 µs]
+                        change: [-2.3713% -1.0724% +0.6813%] (p = 0.21 > 0.05)
+                        No change in performance detected.
+Found 7 outliers among 50 measurements (14.00%)
+  1 (2.00%) low mild
+  2 (4.00%) high mild
+  4 (8.00%) high severe
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10000
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10000: Collecting 50 samples in estimated 2.0028 s (246k iterations)
+Benchmarking allows_socket/tcp_connect/allow_last_rule/10000: Analyzing
+allows_socket/tcp_connect/allow_last_rule/10000
+                        time:   [7.9460 µs 7.9764 µs 8.0367 µs]
+                        change: [-1.8708% -1.3535% -0.6997%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 11 outliers among 50 measurements (22.00%)
+  1 (2.00%) low severe
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  6 (12.00%) high severe
+Benchmarking allows_socket/tcp_connect/deny/10000
+Benchmarking allows_socket/tcp_connect/deny/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_connect/deny/10000: Collecting 50 samples in estimated 2.0099 s (241k iterations)
+Benchmarking allows_socket/tcp_connect/deny/10000: Analyzing
+allows_socket/tcp_connect/deny/10000
+                        time:   [7.9115 µs 7.9284 µs 7.9517 µs]
+                        change: [-2.3062% -2.1057% -1.8218%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 8 outliers among 50 measurements (16.00%)
+  2 (4.00%) low mild
+  3 (6.00%) high mild
+  3 (6.00%) high severe
+Benchmarking allows_socket/tcp_bind/implicit_probe/10000
+Benchmarking allows_socket/tcp_bind/implicit_probe/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_bind/implicit_probe/10000: Collecting 50 samples in estimated 2.0065 s (203k iterations)
+Benchmarking allows_socket/tcp_bind/implicit_probe/10000: Analyzing
+allows_socket/tcp_bind/implicit_probe/10000
+                        time:   [9.7388 µs 9.7485 µs 9.7604 µs]
+                        change: [-2.5807% -1.7073% -0.4270%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 6 outliers among 50 measurements (12.00%)
+  4 (8.00%) high mild
+  2 (4.00%) high severe
+Benchmarking allows_socket/tcp_accept/unpoliced/10000
+Benchmarking allows_socket/tcp_accept/unpoliced/10000: Warming up for 500.00 ms
+Benchmarking allows_socket/tcp_accept/unpoliced/10000: Collecting 50 samples in estimated 2.0000 s (1.3B iterations)
+Benchmarking allows_socket/tcp_accept/unpoliced/10000: Analyzing
+allows_socket/tcp_accept/unpoliced/10000
+                        time:   [1.5629 ns 1.5656 ns 1.5691 ns]
+                        change: [+5.6536% +6.7377% +7.8851%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 50 measurements (6.00%)
+  2 (4.00%) high mild
+  1 (2.00%) high severe
+
+Benchmarking socket_addr_check_callback/inherit_network (no policy)
+Benchmarking socket_addr_check_callback/inherit_network (no policy): Warming up for 500.00 ms
+Benchmarking socket_addr_check_callback/inherit_network (no policy): Collecting 50 samples in estimated 2.0000 s (221M iterations)
+Benchmarking socket_addr_check_callback/inherit_network (no policy): Analyzing
+socket_addr_check_callback/inherit_network (no policy)
+                        time:   [9.0475 ns 9.0568 ns 9.0677 ns]
+                        change: [-1.4533% -0.7025% -0.0551%] (p = 0.05 > 0.05)
+                        No change in performance detected.
+Found 4 outliers among 50 measurements (8.00%)
+  4 (8.00%) high mild
+Benchmarking socket_addr_check_callback/policy allow/0
+Benchmarking socket_addr_check_callback/policy allow/0: Warming up for 500.00 ms
+Benchmarking socket_addr_check_callback/policy allow/0: Collecting 50 samples in estimated 2.0000 s (83M iterations)
+Benchmarking socket_addr_check_callback/policy allow/0: Analyzing
+socket_addr_check_callback/policy allow/0
+                        time:   [23.937 ns 23.995 ns 24.066 ns]
+                        change: [-2.3313% -1.7947% -1.2702%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 50 measurements (14.00%)
+  3 (6.00%) high mild
+  4 (8.00%) high severe
+Benchmarking socket_addr_check_callback/policy deny/0
+Benchmarking socket_addr_check_callback/policy deny/0: Warming up for 500.00 ms
+Benchmarking socket_addr_check_callback/policy deny/0: Collecting 50 samples in estimated 2.0000 s (82M iterations)
+Benchmarking socket_addr_check_callback/policy deny/0: Analyzing
+socket_addr_check_callback/policy deny/0
+                        time:   [23.896 ns 23.919 ns 23.948 ns]
+                        change: [-2.8855% -2.3707% -1.9250%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 50 measurements (14.00%)
+  1 (2.00%) low severe
+  1 (2.00%) low mild
+  2 (4.00%) high mild
+  3 (6.00%) high severe
+Benchmarking socket_addr_check_callback/policy allow/1000
+Benchmarking socket_addr_check_callback/policy allow/1000: Warming up for 500.00 ms
+Benchmarking socket_addr_check_callback/policy allow/1000: Collecting 50 samples in estimated 2.0000 s (2.6M iterations)
+Benchmarking socket_addr_check_callback/policy allow/1000: Analyzing
+socket_addr_check_callback/policy allow/1000
+                        time:   [762.83 ns 763.59 ns 764.55 ns]
+                        change: [-0.1144% +13.340% +34.172%] (p = 0.16 > 0.05)
+                        No change in performance detected.
+Found 6 outliers among 50 measurements (12.00%)
+  1 (2.00%) low severe
+  2 (4.00%) high mild
+  3 (6.00%) high severe
+Benchmarking socket_addr_check_callback/policy deny/1000
+Benchmarking socket_addr_check_callback/policy deny/1000: Warming up for 500.00 ms
+Benchmarking socket_addr_check_callback/policy deny/1000: Collecting 50 samples in estimated 2.0001 s (2.4M iterations)
+Benchmarking socket_addr_check_callback/policy deny/1000: Analyzing
+socket_addr_check_callback/policy deny/1000
+                        time:   [760.96 ns 761.70 ns 762.65 ns]
+                        change: [-8.6447% -2.5491% +1.8183%] (p = 0.52 > 0.05)
+                        No change in performance detected.
+Found 8 outliers among 50 measurements (16.00%)
+  1 (2.00%) low mild
+  3 (6.00%) high mild
+  4 (8.00%) high severe
+
+Benchmarking build_wasi_ctx/no policy (baseline)
+Benchmarking build_wasi_ctx/no policy (baseline): Warming up for 500.00 ms
+Benchmarking build_wasi_ctx/no policy (baseline): Collecting 50 samples in estimated 2.0017 s (1.2M iterations)
+Benchmarking build_wasi_ctx/no policy (baseline): Analyzing
+build_wasi_ctx/no policy (baseline)
+                        time:   [1.6777 µs 1.6810 µs 1.6855 µs]
+                        change: [+2.4164% +3.5189% +4.2834%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 4 outliers among 50 measurements (8.00%)
+  1 (2.00%) high mild
+  3 (6.00%) high severe
+Benchmarking build_wasi_ctx/policy (pre-parsed)/0
+Benchmarking build_wasi_ctx/policy (pre-parsed)/0: Warming up for 500.00 ms
+Benchmarking build_wasi_ctx/policy (pre-parsed)/0: Collecting 50 samples in estimated 2.0005 s (1.0M iterations)
+Benchmarking build_wasi_ctx/policy (pre-parsed)/0: Analyzing
+build_wasi_ctx/policy (pre-parsed)/0
+                        time:   [1.9835 µs 1.9977 µs 2.0143 µs]
+                        change: [+0.9375% +1.5982% +2.2848%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 50 measurements (2.00%)
+  1 (2.00%) high mild
+Benchmarking build_wasi_ctx/policy (parse + build)/0
+Benchmarking build_wasi_ctx/policy (parse + build)/0: Warming up for 500.00 ms
+Benchmarking build_wasi_ctx/policy (parse + build)/0: Collecting 50 samples in estimated 2.0002 s (351k iterations)
+Benchmarking build_wasi_ctx/policy (parse + build)/0: Analyzing
+build_wasi_ctx/policy (parse + build)/0
+                        time:   [5.6241 µs 5.6399 µs 5.6565 µs]
+                        change: [-3.0439% -2.7388% -2.4519%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Benchmarking build_wasi_ctx/policy (pre-parsed)/1000
+Benchmarking build_wasi_ctx/policy (pre-parsed)/1000: Warming up for 500.00 ms
+Benchmarking build_wasi_ctx/policy (pre-parsed)/1000: Collecting 50 samples in estimated 2.0084 s (283k iterations)
+Benchmarking build_wasi_ctx/policy (pre-parsed)/1000: Analyzing
+build_wasi_ctx/policy (pre-parsed)/1000
+                        time:   [6.9599 µs 6.9734 µs 6.9905 µs]
+                        change: [-2.8996% -2.4247% -1.9729%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 12 outliers among 50 measurements (24.00%)
+  5 (10.00%) low mild
+  3 (6.00%) high mild
+  4 (8.00%) high severe
+Benchmarking build_wasi_ctx/policy (parse + build)/1000
+Benchmarking build_wasi_ctx/policy (parse + build)/1000: Warming up for 500.00 ms
+Benchmarking build_wasi_ctx/policy (parse + build)/1000: Collecting 50 samples in estimated 2.0993 s (6375 iterations)
+Benchmarking build_wasi_ctx/policy (parse + build)/1000: Analyzing
+build_wasi_ctx/policy (parse + build)/1000
+                        time:   [322.45 µs 323.44 µs 324.51 µs]
+                        change: [-0.3032% +0.0802% +0.4806%] (p = 0.70 > 0.05)
+                        No change in performance detected.
+Found 2 outliers among 50 measurements (4.00%)
+  2 (4.00%) high mild
+

@@ -1,0 +1,461 @@
+[
+ {
+  "group": "allows_socket",
+  "function": "tcp_accept/unpoliced",
+  "value": "0",
+  "median_ns": 1.5894938756601042,
+  "median_lo": 1.587590438169253,
+  "median_hi": 1.5923474299668914,
+  "mean_ns": 1.592885061749535
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_accept/unpoliced",
+  "value": "10",
+  "median_ns": 1.573082807152689,
+  "median_lo": 1.568478244540263,
+  "median_hi": 1.5758510476280665,
+  "mean_ns": 1.5809704236485556
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_accept/unpoliced",
+  "value": "100",
+  "median_ns": 1.5628649907027412,
+  "median_lo": 1.56157411332795,
+  "median_hi": 1.564418742507404,
+  "mean_ns": 1.5664298468131048
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_accept/unpoliced",
+  "value": "1000",
+  "median_ns": 1.5602363855534276,
+  "median_lo": 1.5598830905588597,
+  "median_hi": 1.5618919068707706,
+  "mean_ns": 1.563350937442072
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_accept/unpoliced",
+  "value": "10000",
+  "median_ns": 1.5659321991803563,
+  "median_lo": 1.5624323332646404,
+  "median_hi": 1.5685421335453,
+  "mean_ns": 1.5688989893988272
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_bind/implicit_probe",
+  "value": "0",
+  "median_ns": 6.189412890904604,
+  "median_lo": 6.18127926214833,
+  "median_hi": 6.194970852918809,
+  "mean_ns": 6.200414210958902
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_bind/implicit_probe",
+  "value": "10",
+  "median_ns": 16.846547883033182,
+  "median_lo": 16.819627795162994,
+  "median_hi": 16.865402710383336,
+  "mean_ns": 16.889143599071485
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_bind/implicit_probe",
+  "value": "100",
+  "median_ns": 98.7498965512321,
+  "median_lo": 98.60438030030772,
+  "median_hi": 98.89800447792028,
+  "mean_ns": 98.91729317070873
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_bind/implicit_probe",
+  "value": "1000",
+  "median_ns": 910.1994325701895,
+  "median_lo": 908.6298620604293,
+  "median_hi": 912.1849896276271,
+  "mean_ns": 915.3224389196648
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_bind/implicit_probe",
+  "value": "10000",
+  "median_ns": 9743.334813662517,
+  "median_lo": 9733.066635404024,
+  "median_hi": 9755.24953255142,
+  "mean_ns": 9807.703297997079
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/allow_last_rule",
+  "value": "0",
+  "median_ns": 5.609283059801732,
+  "median_lo": 5.602929747202704,
+  "median_hi": 5.6151580330359225,
+  "mean_ns": 5.617770073496684
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/allow_last_rule",
+  "value": "10",
+  "median_ns": 13.895623337439524,
+  "median_lo": 13.876599076559094,
+  "median_hi": 13.930976417104638,
+  "mean_ns": 14.065427055221203
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/allow_last_rule",
+  "value": "100",
+  "median_ns": 86.7545662272253,
+  "median_lo": 86.40391900783406,
+  "median_hi": 88.17714046878959,
+  "mean_ns": 95.19875005016208
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/allow_last_rule",
+  "value": "1000",
+  "median_ns": 670.9899831249955,
+  "median_lo": 669.5582193401808,
+  "median_hi": 672.3580332726149,
+  "mean_ns": 706.3775080481954
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/allow_last_rule",
+  "value": "10000",
+  "median_ns": 7944.819649262654,
+  "median_lo": 7940.840557441486,
+  "median_hi": 7952.612618104236,
+  "mean_ns": 7985.44929611936
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/deny",
+  "value": "0",
+  "median_ns": 5.787854796656836,
+  "median_lo": 5.777340464833609,
+  "median_hi": 5.798901716174863,
+  "mean_ns": 5.817134284938935
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/deny",
+  "value": "10",
+  "median_ns": 15.053903115833174,
+  "median_lo": 15.033042150363315,
+  "median_hi": 15.077922203244265,
+  "mean_ns": 15.17320180124932
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/deny",
+  "value": "100",
+  "median_ns": 84.697537425197,
+  "median_lo": 84.40364542492202,
+  "median_hi": 85.27958486592377,
+  "mean_ns": 88.50265805678666
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/deny",
+  "value": "1000",
+  "median_ns": 697.5360745398572,
+  "median_lo": 696.7258730088299,
+  "median_hi": 699.2414053774439,
+  "mean_ns": 798.2343639434496
+ },
+ {
+  "group": "allows_socket",
+  "function": "tcp_connect/deny",
+  "value": "10000",
+  "median_ns": 7913.121693121693,
+  "median_lo": 7902.643467643467,
+  "median_hi": 7928.473544973545,
+  "mean_ns": 7929.310251360563
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_first_rule",
+  "value": "0",
+  "median_ns": 5.682749012523531,
+  "median_lo": 5.6781964414233155,
+  "median_hi": 5.688019275085948,
+  "mean_ns": 5.698135264985627
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_first_rule",
+  "value": "10",
+  "median_ns": 5.626057950891485,
+  "median_lo": 5.623636560049908,
+  "median_hi": 5.629896773580172,
+  "mean_ns": 5.631620616801862
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_first_rule",
+  "value": "100",
+  "median_ns": 5.5704983122658485,
+  "median_lo": 5.565980736623555,
+  "median_hi": 5.574224730441458,
+  "mean_ns": 5.590622320406926
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_first_rule",
+  "value": "1000",
+  "median_ns": 5.5418001598621505,
+  "median_lo": 5.538716964124948,
+  "median_hi": 5.548053347241275,
+  "mean_ns": 5.550458994995287
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_first_rule",
+  "value": "10000",
+  "median_ns": 5.54322616761692,
+  "median_lo": 5.540119455137448,
+  "median_hi": 5.546854033178267,
+  "mean_ns": 5.545666045626149
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_last_rule",
+  "value": "0",
+  "median_ns": 5.966229423278543,
+  "median_lo": 5.960439170753382,
+  "median_hi": 5.972672303463526,
+  "mean_ns": 5.9844315699523145
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_last_rule",
+  "value": "10",
+  "median_ns": 12.338012963176533,
+  "median_lo": 12.276579120960593,
+  "median_hi": 12.414427627885585,
+  "mean_ns": 13.138360129910106
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_last_rule",
+  "value": "100",
+  "median_ns": 84.18488224136104,
+  "median_lo": 83.17305519696008,
+  "median_hi": 86.86213160089174,
+  "mean_ns": 115.3870997304524
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_last_rule",
+  "value": "1000",
+  "median_ns": 697.1349461889497,
+  "median_lo": 695.5410089793315,
+  "median_hi": 698.4539255795831,
+  "mean_ns": 852.6707531293755
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/allow_last_rule",
+  "value": "10000",
+  "median_ns": 8116.313647520864,
+  "median_lo": 8104.706572164949,
+  "median_hi": 8127.384995374042,
+  "mean_ns": 8152.98886170999
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/deny",
+  "value": "0",
+  "median_ns": 5.801481008255966,
+  "median_lo": 5.795670849372199,
+  "median_hi": 5.80812787925525,
+  "mean_ns": 5.822069071690862
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/deny",
+  "value": "10",
+  "median_ns": 15.350256737236261,
+  "median_lo": 15.343523231024767,
+  "median_hi": 15.368465306104133,
+  "mean_ns": 15.44170123327935
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/deny",
+  "value": "100",
+  "median_ns": 77.96832671530889,
+  "median_lo": 77.69078427398927,
+  "median_hi": 78.16513605011363,
+  "mean_ns": 79.54561358847437
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/deny",
+  "value": "1000",
+  "median_ns": 652.5288405980473,
+  "median_lo": 651.9987743282376,
+  "median_hi": 652.9227049988401,
+  "mean_ns": 662.3193899150189
+ },
+ {
+  "group": "allows_socket",
+  "function": "udp_send/deny",
+  "value": "10000",
+  "median_ns": 8094.251417824074,
+  "median_lo": 8087.963877688172,
+  "median_hi": 8104.4921875,
+  "mean_ns": 8201.408063323315
+ },
+ {
+  "group": "build_wasi_ctx",
+  "function": "no policy (baseline)",
+  "value": null,
+  "median_ns": 1680.3200251905273,
+  "median_lo": 1677.1843244474824,
+  "median_hi": 1684.1706818065572,
+  "mean_ns": 1685.2527874974237
+ },
+ {
+  "group": "build_wasi_ctx",
+  "function": "policy (parse + build)",
+  "value": "0",
+  "median_ns": 5627.808149184149,
+  "median_lo": 5611.74198731501,
+  "median_hi": 5659.349848484849,
+  "mean_ns": 5637.067721213323
+ },
+ {
+  "group": "build_wasi_ctx",
+  "function": "policy (parse + build)",
+  "value": "1000",
+  "median_ns": 322011.8559649123,
+  "median_lo": 321642.8255319149,
+  "median_hi": 323401.99,
+  "mean_ns": 323702.71508721897
+ },
+ {
+  "group": "build_wasi_ctx",
+  "function": "policy (pre-parsed)",
+  "value": "0",
+  "median_ns": 1971.1115495755826,
+  "median_lo": 1967.5282151476843,
+  "median_hi": 1997.5610230477487,
+  "mean_ns": 1995.089898597676
+ },
+ {
+  "group": "build_wasi_ctx",
+  "function": "policy (pre-parsed)",
+  "value": "1000",
+  "median_ns": 6958.293979538545,
+  "median_lo": 6955.266632208705,
+  "median_hi": 6962.5334620334625,
+  "mean_ns": 6974.34918351362
+ },
+ {
+  "group": "parse_policy",
+  "function": "examples/policy.toml",
+  "value": null,
+  "median_ns": 4330.857273010214,
+  "median_lo": 4327.905762304922,
+  "median_hi": 4336.940667933841,
+  "mean_ns": 4371.699480727965
+ },
+ {
+  "group": "parse_policy",
+  "function": "rules",
+  "value": "20003",
+  "median_ns": 3260151.291666667,
+  "median_lo": 3255894.8333333335,
+  "median_hi": 3264904.0416666665,
+  "mean_ns": 3265569.835
+ },
+ {
+  "group": "parse_policy",
+  "function": "rules",
+  "value": "2003",
+  "median_ns": 320379.679,
+  "median_lo": 319666.8528409091,
+  "median_hi": 321233.9690045249,
+  "mean_ns": 323004.3044709651
+ },
+ {
+  "group": "parse_policy",
+  "function": "rules",
+  "value": "203",
+  "median_ns": 37339.686613726604,
+  "median_lo": 37098.04625735913,
+  "median_hi": 37488.24024390244,
+  "mean_ns": 37777.1610877021
+ },
+ {
+  "group": "parse_policy",
+  "function": "rules",
+  "value": "23",
+  "median_ns": 6984.368298627591,
+  "median_lo": 6978.5727306547615,
+  "median_hi": 6995.899278644742,
+  "mean_ns": 7014.805283359115
+ },
+ {
+  "group": "parse_policy",
+  "function": "rules",
+  "value": "3",
+  "median_ns": 3452.8870528980824,
+  "median_lo": 3436.6544987817615,
+  "median_hi": 3460.1435623200327,
+  "mean_ns": 3503.6241236129426
+ },
+ {
+  "group": "socket_addr_check_callback",
+  "function": "inherit_network (no policy)",
+  "value": null,
+  "median_ns": 9.069684669388765,
+  "median_lo": 9.048773058077316,
+  "median_hi": 9.08452927778405,
+  "mean_ns": 9.082665984791685
+ },
+ {
+  "group": "socket_addr_check_callback",
+  "function": "policy allow",
+  "value": "0",
+  "median_ns": 23.98204526471344,
+  "median_lo": 23.949760061680802,
+  "median_hi": 24.010673579397558,
+  "mean_ns": 24.060106122198206
+ },
+ {
+  "group": "socket_addr_check_callback",
+  "function": "policy allow",
+  "value": "1000",
+  "median_ns": 762.7314285714285,
+  "median_lo": 762.2430465091529,
+  "median_hi": 763.8468398153669,
+  "mean_ns": 864.7659709976507
+ },
+ {
+  "group": "socket_addr_check_callback",
+  "function": "policy deny",
+  "value": "0",
+  "median_ns": 23.91620688423189,
+  "median_lo": 23.900839569712566,
+  "median_hi": 23.94223815680378,
+  "mean_ns": 23.955807967539428
+ },
+ {
+  "group": "socket_addr_check_callback",
+  "function": "policy deny",
+  "value": "1000",
+  "median_ns": 761.3258855625584,
+  "median_lo": 760.6307648059224,
+  "median_hi": 761.6057820855615,
+  "mean_ns": 766.7032880635032
+ }
+]
